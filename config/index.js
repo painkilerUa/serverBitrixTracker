@@ -8,4 +8,5 @@ module.exports = {
     db_user: 'root',
     db_port: '3307',
     db_password: 'timeismoney',
+    db_dialect: 'mysql'
 }

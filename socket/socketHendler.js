@@ -24,7 +24,15 @@ class SocketHendler {
         this.socketIo.on('connection', (socket) => {
             console.log('New connection ', socket.id );
 
-            socket.on('authorization', require('./authorization')(users));
+            socket.on('createAccount', require('./createAccount'));
+
+            socket.on('authorization', require('./authorization')(users, socket));
+
+            socket.on('userInterfaceAction', require('./userInterfaceAction')(users, socket))
+
+//            socket.on('startOrStopTask', )
+//            scket.on('manualScreenshot',)
+
             socket.on('disconnect', () => {
                 console.log('user disconnected');
             });

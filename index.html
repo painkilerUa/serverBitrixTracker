@@ -8,13 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
     <script>
         "use strict";
-//        const socket = io('http://localhost:3302');
-//        socket.emit('authorization', {id: 486})
-        class cat{
-            constructor(){
-                this.timerReconect = 120000;
-            }
-        }
+        const socket = io('http://localhost:3302');
+        socket.emit('createAccount', {id: 486})
+
 
     </script>
 </body>

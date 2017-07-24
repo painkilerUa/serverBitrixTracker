@@ -2,44 +2,39 @@
 const rp = require('request-promise');
 const config = require('../config');
 const log = require('../utils');
-const mysql_query = require('../manage');
 
 
-module.exports = (users) => {
-        return (data) => {
-            let filteredDepartments = new Promise ((resolve, reject) => {
-                getAllItems('department.get')
-                    .then((result) => {
-                        resolve(getChildDepartments({"ID": config.head_department_id}, result));
-                    }).catch((err) => {
-                    reject(err)
-                })
-            });
-
-
-            Promise.all([getAllItems('user.get'), filteredDepartments]).then((resolve) => {
-                let usersFilteredByHeadDep = intersectionUsersVsDepartments(resolve[0], resolve[1]);
-                users.length = 0;
-                for(let user of usersFilteredByHeadDep){
-                    let curUser = {
-                        id: user["ID"],
-                        name: user["NAME"],
-                        lastName: user["LAST_NAME"],
-                        secondName: user["SECOND_NAME"],
-                        personalPhoto: user["PERSONAL_PHOTO"],
-                        online: false,
-                        currentTask: null
-                    }
-                    if(user["ID"] == data['id']){
-                        curUser['online'] = true;
-                    }
-                    users.push(curUser);
+module.exports = (users, socket) => {
+    return (data) => {
+        Promise.all([getAllItems('user.get'), filteredDepartments()]).then((resolve) => {
+            let usersFilteredByHeadDep = intersectionUsersVsDepartments(resolve[0], resolve[1]);
+            users.length = 0;
+            for(let user of usersFilteredByHeadDep){
+                let curUser = {
+                    id: user["ID"],
+                    name: user["NAME"],
+                    lastName: user["LAST_NAME"],
+                    secondName: user["SECOND_NAME"],
+                    personalPhoto: user["PERSONAL_PHOTO"],
+                    online: false,
+                    currentTask: null,
+                    currentProject: null
                 }
-                console.log(users)
-            }, (reject) => {
-                log.info('some error in process getting authorization data from Bitrix server' + reject)
-            })
-        }
+                if(user["ID"] == data['id']){
+                    curUser['online'] = true;
+                }
+                users.push(curUser);
+            }
+            return users;
+        }).then((resolve) => {
+                return require('./general_methods/generateUsersList.js')(resolve)
+        }).then((resolve) => {
+            resolve
+        }).catch((err) => {
+            log.info('some error in process getting authorization data from Bitrix server' + err)
+        })
+
+    }
 }
 
 function getChildDepartments(parentDepartment, departments) {
@@ -77,6 +72,16 @@ function getAllItems(method){
         }
     })
 }
+function filteredDepartments(){
+    return new Promise ((resolve, reject) => {
+        getAllItems('department.get')
+            .then((result) => {
+                resolve(getChildDepartments({"ID": config.head_department_id}, result));
+            }).catch((err) => {
+            reject(err)
+        })
+    })
+}
 function intersectionUsersVsDepartments(biggerArr, shorterArr){
     return biggerArr.filter((biggerArrEl) => {
         for(let element of shorterArr){
@@ -86,6 +91,5 @@ function intersectionUsersVsDepartments(biggerArr, shorterArr){
         }
     })
 }
-
 
 

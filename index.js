@@ -5,7 +5,7 @@ const log = require('./utils');
 const SocketConnections = require('./socket/socketConnections');
 const SosketHendler = require('./socket/socketHendler')
 const routs = require('./router')
-
+const models = require('./models');
 
 
 let protocol = 'http';
@@ -27,9 +27,11 @@ sosketHendler.start()
 
 
 
+models.sequelize.sync().then(() => {
+    server.listen(PORT, () => {
+        log.info('Server ' + protocol + ' is running on port ' + PORT + '...');
 
-
-server.listen(PORT, () => {
-    log.info('Server ' + protocol + ' is running on port ' + PORT + '...');
-
+    });
 });
+
+

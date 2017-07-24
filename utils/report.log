@@ -259,3 +259,108 @@
 {"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-10T14:26:09.290Z"}
 {"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-10T14:36:16.670Z"}
 {"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-10T14:38:08.067Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T06:43:27.291Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T06:49:16.177Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T08:30:18.608Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T08:32:51.829Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T08:38:33.156Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T08:39:43.421Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T08:45:38.929Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T08:46:40.455Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T10:18:27.753Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T12:26:24.606Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T12:28:21.879Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T12:33:32.440Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T12:33:38.990Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T12:33:41.339Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-11T13:48:21.002Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-12T07:29:36.002Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-12T10:48:55.885Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-12T11:03:37.528Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-12T11:13:27.052Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-12T12:31:42.713Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-12T13:57:00.094Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-13T06:59:37.866Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-13T07:01:47.199Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-13T08:29:49.383Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T06:37:44.545Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:46:02.044Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:51:39.747Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:52:13.782Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:52:30.089Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:53:44.354Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:54:16.183Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:54:44.378Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:55:22.057Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T07:59:48.237Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T08:01:22.117Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T08:01:56.987Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T08:05:51.737Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverStatusCodeError: 404 - \"{\\\"error\\\":\\\"ERROR_METHOD_NOT_FOUND\\\",\\\"error_description\\\":\\\"Method not found!\\\"}\"","timestamp":"2017-07-17T08:06:04.955Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T08:06:26.654Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverStatusCodeError: 404 - \"{\\\"error\\\":\\\"ERROR_METHOD_NOT_FOUND\\\",\\\"error_description\\\":\\\"Method not found!\\\"}\"","timestamp":"2017-07-17T08:06:41.715Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T08:08:24.061Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T08:08:40.652Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-17T08:30:13.217Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-18T08:20:04.048Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-20T11:26:11.332Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-20T11:27:18.804Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverReferenceError: getAllItems is not defined","timestamp":"2017-07-20T11:52:50.017Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-20T11:54:32.954Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverReferenceError: rp is not defined","timestamp":"2017-07-20T11:55:05.344Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverReferenceError: rp is not defined","timestamp":"2017-07-20T11:55:15.123Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-20T11:57:30.438Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverReferenceError: config is not defined","timestamp":"2017-07-20T11:57:49.163Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-20T11:58:26.765Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverError: Cannot find module '../config'","timestamp":"2017-07-20T12:06:19.326Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-20T12:06:45.414Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverError: Cannot find module '../utils'","timestamp":"2017-07-20T12:06:55.067Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-20T12:07:07.033Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T07:56:59.848Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T10:16:13.699Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T10:52:56.062Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T11:15:10.498Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T11:49:27.261Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T12:02:32.645Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T12:07:23.106Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T13:33:29.650Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T13:38:35.330Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T13:39:07.135Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T13:45:04.043Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T13:46:17.485Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-21T13:52:15.206Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T06:39:47.059Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T06:54:28.938Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T06:56:28.670Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T06:59:34.566Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T07:05:38.340Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T07:07:13.239Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T07:23:11.691Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:08:46.713Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:11:20.848Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:12:42.603Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:14:41.143Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:23:55.074Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:24:24.129Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:25:04.701Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:27:56.401Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:29:29.604Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:30:33.807Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:32:19.624Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:54:36.309Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T08:54:39.021Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:38:59.153Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:41:27.947Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:45:13.590Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:47:36.311Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:49:14.765Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:50:59.239Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:53:00.486Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:57:26.046Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T10:59:53.337Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T11:00:15.737Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T11:06:02.662Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverReferenceError: getWorkedTime is not defined","timestamp":"2017-07-24T11:11:54.804Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T11:12:40.881Z"}
+{"level":"info","message":"some error in process getting authorization data from Bitrix serverError: ER_NO_SUCH_TABLE: Table 'bitrix_tracker.work_time' doesn't exist","timestamp":"2017-07-24T11:13:23.646Z"}
+{"level":"info","message":"Server http is running on port 3302...","timestamp":"2017-07-24T11:15:18.577Z"}
