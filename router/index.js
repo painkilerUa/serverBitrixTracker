@@ -51,14 +51,14 @@ function initRoute(io){
         //     console.log(err)
         // })
 
-        // models.WorkHour.findAll({
-        //     attributes: ['id', 'groupId', 'taskId', 'time_stamp','tTipe'],
-        //     include:  [ {model: models.User, attributes: ['id', 'bitrixUserId', 'bitrixUserToken', 'bitrixServiceHash'], required: true}]
-        // }).then((data) => {
-        //         res.send(data)
-        //     }).catch((err) => {
-        //         console.log(err)
-        //     })
+        models.WorkHour.findAll({
+            attributes: ['id', 'group_id', 'task_id', 'time_stamp','t_tipe'],
+            include:  [ {model: models.User, attributes: ['id', 'bitrix_user_id', 'bitrix_user_token', 'bitrix_service_hash'], required: true}]
+        }).then((data) => {
+                res.send(data)
+            }).catch((err) => {
+                console.log(err)
+            })
         // let addWorkTime = new Promise((resolve, reject) => {
         //     // let data = {
         //     //     user_id: 111,

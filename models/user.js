@@ -8,7 +8,11 @@ module.exports = (sequelize, DataTypes) => {
             unique: 'bitrix_user_id_index'
         },
         bitrix_user_token: DataTypes.STRING,
-        bitrix_service_hash: DataTypes.STRING
+        bitrix_service_hash: DataTypes.STRING,
+        timer_date: {
+            type: DataTypes.DATE,
+            defaultValue: null
+        }
     }, {underscored: true});
 
     User.associate = function(models) {

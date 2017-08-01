@@ -9,9 +9,11 @@
     <script>
         "use strict";
         const socket = io('http://localhost:3302');
-        socket.emit('createAccount', {id: 486})
+//        socket.emit('createAccount', {bitrix_user_id: 486, bitrix_user_token: 'token586', bitrix_service_hash: 'hash586'})
+        socket.emit('userInterfaceAction', {actionName: 'stopTask', data: {bitrix_user_id: 486, group_id: 62, task_id: 11378, time_stamp: +new Date()}});
 
 
     </script>
 </body>
 </html>
+

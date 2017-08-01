@@ -28,7 +28,7 @@ class SocketHendler {
 
             socket.on('authorization', require('./authorization')(users, socket));
 
-            socket.on('userInterfaceAction', require('./userInterfaceAction')(users, socket))
+            socket.on('userInterfaceAction', require('./userInterfaceAction')(users, socket));
 
 //            socket.on('startOrStopTask', )
 //            scket.on('manualScreenshot',)
