@@ -18,13 +18,17 @@ module.exports = (users, socket) => {
                     personalPhoto: user["PERSONAL_PHOTO"],
                     online: false,
                     currentTask: null,
-                    currentProject: null
+                    currentProject: null,
+                    timer: 59,
+                    socketId: null
                 }
                 if(user["ID"] == data['id']){
                     curUser['online'] = true;
+                    curUser['socketId'] = socket.id;
                 }
                 users.push(curUser);
             }
+            users
             return users;
         }).then((resolve) => {
                 return require('./general_methods/generateUsersList.js')(resolve)

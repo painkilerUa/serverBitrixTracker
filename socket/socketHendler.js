@@ -24,11 +24,13 @@ class SocketHendler {
         this.socketIo.on('connection', (socket) => {
             console.log('New connection ', socket.id );
 
-            socket.on('createAccount', require('./createAccount'));
+            socket.on('createAccount', require('./createAccount')(socket, this.socketIo));
 
             socket.on('authorization', require('./authorization')(users, socket));
 
-            socket.on('userInterfaceAction', require('./userInterfaceAction')(users, socket));
+            socket.on('userInterfaceAction', require('./userInterfaceAction')(users, this.socketIo));
+
+            socket.on('initScreenshot', require('./screenshootHandler')(this.socketIo));
 
 //            socket.on('startOrStopTask', )
 //            scket.on('manualScreenshot',)
@@ -66,5 +68,9 @@ module.exports = SocketHendler;
 //     }
 // //    return departments;
 // }
-
-
+//
+//
+// https://gscor.bitrix24.ru
+//     486
+// seecyi68c8mbze3l
+// http://localhost:3302

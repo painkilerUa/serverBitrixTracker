@@ -6,7 +6,7 @@ module.exports = {
     db_host: 'localhost',
     db_name: 'bitrix_tracker',
     db_user: 'root',
-    db_port: '3307',
-    db_password: 'timeismoney',
+    db_port: '3306',
+    db_password: 'time-ismoney',
     db_dialect: 'mysql'
 }

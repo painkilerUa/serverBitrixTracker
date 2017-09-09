@@ -5,10 +5,10 @@ const log = require('../utils');
 const _mysql = require('../manage');
 const models = require('../models');
 
-module.exports = (users, socket) => {
+module.exports = (users, socketIo) => {
     return (payload) => {
 
-        // {actionName: 'startTask',
+        // {actionName: 'getInitData',
         // data: {
         //     bitrix_user_id: 1,
         //     group_id: 500,
@@ -19,6 +19,9 @@ module.exports = (users, socket) => {
         let actionData = payload.data;
 
         switch (actionName) {
+            case 'getInitData':
+                getInitDataHandler();
+                break;
             case 'startTask':
                 startTaskHandler(actionData);
                 break;
@@ -26,9 +29,15 @@ module.exports = (users, socket) => {
                 stopTaskHandler(actionData);
                 break;
         }
+        function getInitDataHandler(){
+            Promise.all([require('./general_methods/generateUsersList.js')(users)]).then((resolve) => {
+                socketIo.emit('updateData', resolve[0]);
+            }).catch((err) => {
+                log.info('Some error in getInitDataHandler function ' + err)
+            })
+        }
         function startTaskHandler(actionData){
-
-            Promise.all([require('./general_methods/generateUsersList.js')(users, socket), require('./general_methods/getAllItems')('task.item.list'), require('./general_methods/getAllItems')('sonet_group.get'), addWorkPointIntoDB(actionData, 'START')]).then((resolve) => {
+            Promise.all([require('./general_methods/generateUsersList.js')(users), require('./general_methods/getAllItems')('task.item.list'), require('./general_methods/getAllItems')('sonet_group.get'), addWorkPointIntoDB(actionData, 'START')]).then((resolve) => {
                 let currentProject = null;
                 let currentTask = null;
                 let updatedUserList = resolve[0];
@@ -53,23 +62,25 @@ module.exports = (users, socket) => {
                     }
                 }
 
-                socket.emit('updateData', updatedUserList);
+                socketIo.emit('updateData', updatedUserList);
+                updatedUserList
             }).catch((err) => {
                 log.info('Some error in process updating user list startTaskHandler ' + err)
             })
         }
         function stopTaskHandler(actionData){
-            Promise.all([require('./general_methods/generateUsersList.js')(users, socket), addWorkPointIntoDB(actionData, 'STOP')]).then((resolve)=>{
+            Promise.all([require('./general_methods/generateUsersList.js')(users), addWorkPointIntoDB(actionData, 'STOP')]).then((resolve)=>{
                 let updatedUserList = resolve[0];
                 for(let user of updatedUserList){
-                    if(user.id == resolve['bitrix_user_id']){
+                    if(user.id == resolve[1]['bitrix_user_id']){
                         user.currentProject = null;
                         user.currentTask = null;
                         break;
                     }
                 }
 
-                socket.emit('updateData', updatedUserList);
+                socketIo.emit('updateData', updatedUserList);
+                updatedUserList
             }).catch((err) => {
                 log.info('Some error in process updating user list stopTaskHandler ' + err)
             })
